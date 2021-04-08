@@ -1,0 +1,129 @@
+.header {
+  /* background: rgb(228, 3, 3); */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 22px;
+  margin: 30px 0 0 0;
+  /* color: #fff; */
+  z-index: 10;
+  /* height: 1000px; */
+}
+nav {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  padding: 0px 0;
+}
+.logo {
+  font-size: 2.5em;
+  /* background: white;  */
+  font-family: 'Bebas Neue', cursive;
+}
+.logo h1{
+  /* color: rgb(255, 255, 255); */
+}
+/* body.darkmode--activated .logo h1{
+	color: rgb(0,0,0);
+} */
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  padding:  10px 40px;
+  /* background: rgb(255, 255, 255); */
+  /* color: #ff; */
+}
+/* body.darkmode--activated .nav-links li {
+	color: rgb(0,0,0);
+} */
+
+header{
+    display: flex;
+    /* background: #000; */
+    width: 95%;
+    margin: 0px auto 0 0;
+    font-size: 1.25em;
+    /* color: #000; */
+}
+
+.main-header {
+  font-family: 'Noto Sans JP', sans-serif;
+  
+  /* background: white; */
+  margin: 3em auto 0 0;
+  max-width: 700px;
+}
+
+.main-header h1 {
+  font-size: 2.2em;
+  padding: 30px 20px;
+  font-weight: 600;
+  /* background: white; */
+}
+.main-header h3 {
+  font-size: 1em;
+  padding: 30px 20px;
+  font-weight: 400;
+  /* background: white; */
+}
+.main-header button { 
+  padding: 20px;
+  text-decoration: underline;
+  /* background: white; */
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main-header button:hover{
+  padding: 20px 20px;
+  text-decoration: none;
+  transform: translate(-1px,1px) scale(97%);
+  transition: all 500ms ease-out;
+}
+.main-illustration{
+    /* background: white; */
+}
+.main-illustration img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 3em 0 0;
+    max-width: 250px;
+    max-height: 500px;
+}
+
+@media(max-width:1500px){ 
+.nav-links { 
+  margin-right: 100px;
+}
+
+}
+
+@media(max-width:1000px){ 
+  header{
+    flex-direction: column;
+  }
+.main-illustration img{
+    /* background: red; */
+    position: relative; 
+    padding: 0;
+    margin-left: 20vw;
+} 
+}
+@media(max-width:576px){ 
+
+header {
+  margin:  0;
+  padding: 10vh 0 0 0;
+  font-size: 15px;
+}
+.main-header { 
+  margin: 0;
+}
+}
+
+@media(min-width:1500px){ 
+  header{
+    padding: 10vh 0 0 0;
+  }
+}

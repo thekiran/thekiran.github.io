@@ -1,0 +1,26 @@
+// Animations
+.hide-text {
+  display: inline-block;
+}
+
+// Page overlay
+.overlay {
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+[data-animation-y] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateY(40px);
+}
+
+[data-animation-opacity] {
+  opacity: 0;
+  will-change: opacity;
+}
