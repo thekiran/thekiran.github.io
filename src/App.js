@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React from 'react'; 
 import './base.css';
 import Header from './Components/Header/Header';
 import Showcase from './Components/Showcase/Showcase';
@@ -30,7 +30,7 @@ function App() {
         const scroll = new LocomotiveScroll({
           el: document.querySelector('[data-scroll-container]'),
           smooth: true,
-          multiplier:0.5
+          multiplier:0.8
         });
 
         scroll.on("scroll", ScrollTrigger.update);
@@ -44,12 +44,14 @@ function App() {
             pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
           });
  
-          gsap.set(".about-col",{y:50,opacity:0})
+          gsap.set(".first-col",{y:50,opacity:0})
+          gsap.set(".sec-col",{y:50,opacity:0})
+          gsap.set(".third-col",{y:50,opacity:0})
           gsap.set(".contact-footer",{y:100,opacity:0})
           gsap.set(".main-footer",{y:-50,opacity:0})
 
           let tl = gsap.timeline({defaults:{ease:"none"}})
-            .to(".about-col", {y:0,opacity:1, duration:1,stagger:.1}) 
+            .to(".first-col", {y:0,opacity:1, duration:1,stagger:.1}) 
  
             ScrollTrigger.create({
               trigger:".about-row",
@@ -60,6 +62,30 @@ function App() {
               // scrub:true,
               // pin:true
             })
+            
+          let tlb = gsap.timeline({defaults:{ease:"none"}})
+          .to(".sec-col", {y:0,opacity:1, duration:1,stagger:.1}) 
+          ScrollTrigger.create({
+            trigger:".sec-col",
+            // start:"0%",
+            // end:"+=300",
+            scroller:"[data-scroll-container]",
+            animation:tlb,
+            // scrub:true,
+            // pin:true
+          })
+
+          let tlc = gsap.timeline({defaults:{ease:"none"}})
+          .to(".third-col", {y:0,opacity:1, duration:1,stagger:.1}) 
+          ScrollTrigger.create({
+            trigger:".third-col",
+            // start:"0%",
+            // end:"+=300",
+            scroller:"[data-scroll-container]",
+            animation:tlc,
+            // scrub:true,
+            // pin:true
+          })
 
             let t2 = gsap.timeline({defaults:{ease:"none"}})
             .to(".contact-footer", {y:0,opacity:1, duration:1}) 

@@ -55,6 +55,13 @@ text-decoration: underline;
       color: rgb(0,0,0);
   }
   
+  .footer span{
+    display: block;
+    font-size: 10px;
+    margin-left:90vw ;
+  }
+
+
   @media(max-width:576px){
     .footer{
     margin: 0 1em;

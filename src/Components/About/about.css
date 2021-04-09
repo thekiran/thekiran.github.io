@@ -2,8 +2,9 @@
     /* background: rgb(156, 156, 156); */
     /* color: #fff; */
     /* height: 600px; */
-    padding: 20vh 0 10vh 0;
+    padding: 20em 0 10vh 0;
     /* height: 1000px; */
+    line-height: 1.2;
 }
 
 .about h2{
@@ -45,7 +46,11 @@
 margin: 0 10px;
 font-size: 0.8em;
 }
-
+@media (max-width:768px) {
+    .about{
+        padding: 10em 0 10vh 0;
+    }
+}
 @media(max-width:576px){
     
 .about-row{

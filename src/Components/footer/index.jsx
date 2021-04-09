@@ -27,6 +27,7 @@ const Footer = () => {
                     </ul>
                     </div>
             </div> 
+            <span>Inspired by @nurpais</span>
         </div>);
 }
 
