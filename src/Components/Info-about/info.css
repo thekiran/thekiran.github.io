@@ -1,0 +1,43 @@
+.info {
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+.info-sec {
+}
+.info-row {
+  display: flex;
+}
+.info-col {
+  width: 50%;
+  /* background: red; */
+}
+.info-col .info-title {
+  /* background: rgb(85, 25, 25); */
+  margin: 1em 0;
+  font-size: 2em;
+}
+.info-col p {
+  /* background: rgb(90, 26, 26); */
+  padding: .5em 0;
+  font-size: 1.3em;
+  max-width: 500px;
+  line-height: 1.2;
+}
+.info-col .info-lists {
+  display: flex;
+  /* background: rgb(151, 93, 93); */
+  font-size: 1.5em;
+}
+.info-col .info-list {
+  padding: 0 5em 0 0;
+  margin: .5em 0;
+}
+.info-col .info-list li {
+  padding: 10px;
+}
+
+.info-list li::before {
+  content: '\2713';
+  padding-right: 10px;
+  color: rgb(255, 0, 0);
+}

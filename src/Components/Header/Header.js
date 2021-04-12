@@ -3,6 +3,8 @@ import gsap from 'gsap'
 
 import './header.css'
 import illustration from './img/comic.png'
+
+import Navbar from './Navbar'
 const Header = (//{offsetY}
   ) => {
   React.useEffect(()=>{ 
@@ -16,20 +18,8 @@ const Header = (//{offsetY}
   return (
     <div className='header' // style={{transform:`translateY(${offsetY * -.75}px)`}}
    >
+      <Navbar />
       <div className='container-large'>
-        <nav>
-          <div className='logo'> 
-            <h1>Kir.</h1> 
-          </div>
-          <ul className='nav-links'>
-            <li>
-              <button>about</button>
-            </li>
-            {/* <li>
-              <button>darkmode</button>
-            </li> */}
-          </ul>
-        </nav>
         <header // data-scroll-section
         >
         <div className='main-header'data-scroll data-scroll-speed="5">

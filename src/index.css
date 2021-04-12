@@ -45,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a, button{all: unset;}
+a, button{all: unset; cursor: pointer;}
 /* css rest end  */
 
 body {
