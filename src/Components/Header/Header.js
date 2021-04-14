@@ -31,7 +31,9 @@ const Header = (//{offsetY}
             I craft high-quality, bespoke digital solutions for forward-thinking
             brands, like yours.
           </h3>
+          <a className="header-button" href="/about">
           <button className="slide">learn more </button>
+          </a>
         </div>
         <div className="main-illustration" data-scroll data-scroll-speed="1">
       <img //style={{transform:`translateY(${offsetY * .75}px)`}}

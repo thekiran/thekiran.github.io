@@ -21,7 +21,7 @@ const Showcase = () =>
               data-scroll-speed='-1' //style={{transform:`translateY(${offsetY * .0001}px)`}}
             >
               <h2>I build pixel-perfect web solutions for all devices.</h2>
-              <button>view my work</button>
+              <a href="/about">view my work</a>
             </div>
             <div
               className='showcase-main' // data-scroll-section
@@ -33,7 +33,7 @@ const Showcase = () =>
                     src={mainImg}
                     loading='lazy' //style={{transform:`translateY(${offsetY * -.4}px)`}}
                     alt=''
-                  />{' '}
+                  /> 
                 </a>
               </div>
               <div

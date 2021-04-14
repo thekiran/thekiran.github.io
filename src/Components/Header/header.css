@@ -20,28 +20,33 @@ nav {
   /* margin: 25px auto 0 auto ; */
   padding: 0px 70px 0 0;
 }
-.logo {
+.nav-wrapper .logo {
   font-size: 2.5em;
   /* background: white;  */
   font-family: 'Bebas Neue', cursive;
 }
-.logo h1{
-  /* color: rgb(255, 255, 255); */
+.nav-wrapper .logo h1{
+  /* color: rgb(255, 0, 0); */
 }
-/* body.darkmode--activated .logo h1{
+.nav-wrapper .logo h1 a{
+  color: rgb(255, 255, 255);
+}
+body.darkmode--activated .nav-wrapper .logo h1 a{
 	color: rgb(0,0,0);
-} */
+}
 .nav-links {
   display: flex;
 }
-.nav-links li {
-  padding:  10px 40px;
-  /* background: rgb(255, 255, 255); */
-  /* color: #ff; */
+.nav-links li{ 
+  padding:  20px 40px;
+  /* background: rgb(255, 255, 255); */ 
 }
-/* body.darkmode--activated .nav-links li {
+.nav-links li a{  
+  color: #fff;
+}
+body.darkmode--activated .nav-links li a{
 	color: rgb(0,0,0);
-} */
+}
 
 header{
     display: flex;
@@ -86,6 +91,15 @@ header{
   transform: translate(-1px,1px) scale(97%);
   transition: all 500ms ease-out;
 }
+.header-button button{
+	color: rgb(255, 255, 255);
+  /* background: rgb(255, 0, 0); */
+}
+ 
+.darkmode--activated .header-button button{
+	color: rgb(0, 0, 0);
+}
+ 
 .main-illustration{
     /* background: white; */
 }

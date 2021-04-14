@@ -6,7 +6,7 @@ const Navbar = () => {
     return (  <div className="container-large nav-wrapper"> 
     <nav>
       <div className='logo hover-this'> 
-        <h1 className="link"><a href="/">Kir.</a></h1> 
+        <h1><a href="/">Kir.</a></h1> 
       </div>
       <ul className='nav-links'>
         <li>

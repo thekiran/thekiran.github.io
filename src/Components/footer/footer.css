@@ -16,7 +16,7 @@
     font-size: 1.3em;
     margin: 1em 0 2em 0;
 }
-.contact-footer h5{
+.contact-footer a{
     font-size: 1.7em;
 text-decoration: underline;
 }
@@ -29,15 +29,15 @@ text-decoration: underline;
      padding:6em 0 0em  0;
 
   }
-  .logo {
+  
+.main-footer .logo {
     font-size: 2.5em;
     /* background: white;  */
     font-family: 'Bebas Neue', cursive;
   }
-  .logo h1{
-    /* color: rgb(255, 255, 255); */
-  }
-  body.darkmode--activated .logo h1{
+  
+.main-footer .logo a{color: #fff;}
+.darkmode--activated .logo a{
       color: rgb(0,0,0);
   }
   .footer-links {
@@ -50,6 +50,11 @@ text-decoration: underline;
     padding:  10px 40px;
     /* background: rgb(255, 255, 255); */
     /* color: #ff; */
+  }
+  
+  .footer-links li a{color: #fff;}
+  .darkmode--activated .footer-links li a{
+        color: rgb(0,0,0);
   }
   body.darkmode--activated .footer-links li {
       color: rgb(0,0,0);

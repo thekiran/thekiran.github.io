@@ -9,20 +9,20 @@ const Footer = () => {
                     <p>
                         If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch.
                     </p>
-                    <h5>
+                    <a href="mailto:kirankumargs02@gmail.com"  target="_blank"> 
                         kirankumargs02@gmail.com
-                    </h5>
+                    </a>
                 </div>
                 <div className="main-footer">
                     <div className='logo'> 
-                        <h1>Kir.</h1> 
+                        <a href="/">Kir.</a> 
                     </div>
                     <ul className='footer-links'>
                         <li>
-                        <button>github</button>
+                        <a href="">github</a>
                         </li>
                         <li>
-                        <button>linkedin</button>
+                        <a href="">linkedin</a>
                         </li>
                     </ul>
                     </div>
