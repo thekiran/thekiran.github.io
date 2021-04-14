@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter> 
     {/* <Homepage /> */}
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/about" component={Ab} />
+      {/* <Route exact path="/about" component={Ab} /> */}
     </BrowserRouter>
   );
 }
